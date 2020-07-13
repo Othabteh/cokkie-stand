@@ -8,22 +8,15 @@ function Location(location, minimum, maximum, avgCookies, totalSales, salesArr) 
     this.avgCookies = avgCookies;
     this.totalSales = 0;
     this.salesArr = salesArr;
-
 }
-
 Location.prototype.CookiesAmount = function () {
     for (var index = 0; index < workingHours.length - 1; index++) {
         var numOfSales = Math.round((Math.floor(Math.random() * (this.maximum - this.minimum + 1)) + this.minimum) * this.avgCookies);
         this.totalSales += numOfSales;
         this.salesArr.push(numOfSales);
-        // } console.log(this.totalSales);
-        // console.log(this.salesArr);
+       
     }
 }
-
-
-
-
 var seattle = new Location('Seattle', 23, 65, 6.3, 0, []);
 var tokyo = new Location('Tokyo', 3, 24, 1.2, 0, []);
 var dubai = new Location('Dubai', 11, 38, 3.7, 0, []);
@@ -38,9 +31,6 @@ for (let i = 0; i < locations.length; i++) {
 function render() {
 
     var parentElement = document.getElementById('salesTabel');
-
-
-
     var table = document.createElement('table');
     table.setAttribute('class', 'table-style');
     // first row
@@ -58,6 +48,7 @@ function render() {
     for (var i = 0; i < locations.length; i++) {
         var tr2 = document.createElement('tr');
         tr2.textContent = locations[i].location;
+        tr2.setAttribute('class','location');
         console.log(locations[i].location);
 
         for (var x = 0; x < workingHours.length; x++) {
@@ -68,8 +59,6 @@ function render() {
                 td.textContent = locations[i].salesArr[x];
 
             }
-
-
             tr2.appendChild(td);
             table.appendChild(tr2);
         }
@@ -95,11 +84,6 @@ function render() {
 
     parentElement.appendChild(table);
 }
-// var tr3=document.createElement('tr');
-// tr.textContent='Totals';
-// table.appendChild(tr3);
-
-
 
 console.log(locations[0].salesArr);
 render();
