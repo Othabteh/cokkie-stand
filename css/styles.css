@@ -1,0 +1,15 @@
+/* .table-style{
+    margin-left: 50px;
+} */
+th{
+    padding: 10px 10px;
+}
+ td, tr {
+    border: 1px solid rgb(172, 166, 166);
+    padding: 10px 10px;
+    text-align: center;
+  } 
+  td{
+      text-align: center;
+  }
+  
