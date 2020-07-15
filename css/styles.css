@@ -168,6 +168,31 @@ th{
     margin-right: 80px;
     margin-top: 50px;
 }
+/* ----------sales------------- */
+#form-section{
+    padding: 50px;
+    background-color: rgb(178, 178, 238);
+
+}
+#form-section #addShopForm legend{
+    font-size: 30px;
+    color: blue;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+table td{
+    font-size: 20px;
+}
+#sub{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkblue;
+}
+#sub:hover{color: red;}
+
+
 /* ------------Footer------------- */
 
 footer div {
