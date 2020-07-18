@@ -75,11 +75,11 @@ th{
   }
   header nav a{
      margin-right: 100px;
-      color:rgb(255, 253, 253);
+      color:rgb(10, 53, 243);
       font-weight: bolder;
-      font-size: 20px;
+      font-size: 30px;
       text-decoration: none;
-      padding: 15px;
+      padding: 15px 100px;
   }
   header nav a:hover{
       background-color: gray;
@@ -115,9 +115,10 @@ th{
     line-height: 40px;
     text-align: center;
     display: inline-block;
-   
+   font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
-    /* border: 10px groove #3e4149; */
+    color: rgb(48, 49, 49);
+    
 }
 
 #location-section {
@@ -146,6 +147,9 @@ th{
 }
 #locations-div li{
     margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: blue;
 }
 
 #imgMap-div img {
@@ -196,6 +200,7 @@ th{
 }
 table td{
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #sub{
     color: white;
